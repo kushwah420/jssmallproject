@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator{
+            border: 2px solid black;
+            line-height: 4vh;
+            width: 170px;
+            background: aqua;
+            text-align: center;
+        }
+        .center{
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+  <center class="center">
+    <div class="calculator">
+        <form name="form">
+            <input type="" name="answers" readonly>
+            <br>
+            <input onclick="form.answers.value += '1' " type="button" name="" value="1">
+            <input onclick="form.answers.value += '2' " type="button" name="" value="2">
+            <input onclick="form.answers.value += '3' " type="button" name="" value="3">
+            <br>
+            <input onclick="form.answers.value += '4' " type="button" name="" value="4">
+            <input onclick="form.answers.value += '5' " type="button" name="" value="5">
+            <input onclick="form.answers.value += '6' " type="button" name="" value="6">
+            <br>
+            <input onclick="form.answers.value += '7' " type="button" name="" value="7">
+            <input onclick="form.answers.value += '8' " type="button" name="" value="8">
+            <input onclick="form.answers.value += '9' " type="button" name="" value="9">
+            <br>
+            <input onclick="form.answers.value += '+' " type="button" name="" value="+">
+            <input onclick="form.answers.value += '-' " type="button" name="" value="-">
+            <input onclick="form.answers.value += '/' " type="button" name="" value="/">
+            <br>
+            <input onclick="form.answers.value += '0' " type="button" name="" value="0">
+            <input onclick="form.answers.value += '*' " type="button" name="" value="*">
+            <input onclick="form.answers.value = eval(form.answers.value) " type="button" name="" value="=">
+            <br>
+            <input id="clearbutton" onclick="form.answers.value ='' " type="button" value="Clear All"/>
+
+        </form>
+    </div>
+  </center>  
+</body>
+</html>
